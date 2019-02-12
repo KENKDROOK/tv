@@ -1,22 +1,17 @@
-#include<stdio.h>
-#include<conio.h>
-#include<string.h>
-void main()
+#include <stdio.h>
+#include <ctype.h>
+int main()
 {
-char s[10];
-int i;
-gets(s);
-l=strlen(s);
-for(i=0;i<l;i++)
+char c;
+printf("Enter a character: ");
+scanf("%c", &c);
+if (isalpha(c) == 0)
 {
-if(isalpha(s[i])!=0)
-{
-printf("Alpha");
+printf("%c is not an alphabet.", c);
 }
 else
 {
-printf("No");
-}
+printf("%c is an alphabet.", c);
 }
 getch();
 }
