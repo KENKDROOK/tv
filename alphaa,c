@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <conio.h>
-int main()
+void main()
 {
 char c;
-printf("Enter a character: ");
+printf("Enter a character");
 scanf("%c", &c);
 if (isalpha(c) == 0)
 {
